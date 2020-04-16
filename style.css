@@ -83,8 +83,6 @@ figure {
     justify-content: center;
 }
 .img2{
-   /* max-width: 350px;
-    min-width: 350px;*/
     max-width: 20%;
     height: auto;
     margin-top: 40px;
@@ -237,16 +235,16 @@ label {
 }
 
 nav {
-    width: 200px;
-    margin-top: 30px;
+    width: 300px;
     display: flex;
     justify-content: space-between;
 }
 footer {
     margin-right: 30px;
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: 30px;
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 footer:hover{
     font-size: 20px;
