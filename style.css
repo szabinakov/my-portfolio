@@ -1,0 +1,262 @@
+
+
+body {
+    background-color: #cccccc;
+    background-image: linear-gradient(230deg,#FFEDE4, #FAFFDE, #D5D0D6, #FFEDE4);
+    height: 100%;
+    color: #3a333b;
+    font-family: Playfair Display;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 70px;
+    padding-top: 30px;
+    color: #474049;
+    font-weight: lighter;
+}
+
+
+.stalker {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #764046;
+    font-weight: lighter;
+}
+.circle {
+    position: absolute;
+    background: burlywood;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 40px;
+    opacity: 40%;
+    transition: ease-in-out;
+    animation: drive4 20s infinite;
+  }
+    @keyframes drive4
+    {0% {right: 0px;}
+      50% {right: 1300px;}
+      100% {right: 0px;}}
+      
+  .circle1 {
+  position: absolute;
+  background:burlywood;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-top: 40px;
+  opacity: 60%;
+  transition: ease-in-out;
+  animation: drive5 20s infinite;
+}
+  @keyframes drive5
+  { 0% {right: 500px;}
+    50% {right: 1300px;}
+    100% {right: 500px;} }
+
+  .circle2 {
+    position: absolute;
+    background: burlywood;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 40px;
+    opacity: 80%;
+    transition: ease-in-out;
+    animation: drive6 20s infinite;
+  }
+  @keyframes drive6
+  {0% {right: 1000px;}
+    50% {right: 1300px;}
+    100% {right: 1000px;}}
+
+
+figure {
+      display: flex;
+    padding-top: 80px;
+    justify-content: center;
+}
+.img2{
+   /* max-width: 350px;
+    min-width: 350px;*/
+    max-width: 20%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    opacity: 70%;
+    
+}
+.img1 {
+    opacity: 70%;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 60%;
+    height: auto;
+    display: flex;
+    height: auto;
+    flex-flow: row wrap;
+  }
+
+  .ball {
+    position: absolute;
+    background: burlywood;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 40%;
+    transition: ease-in-out;
+    animation: drive1 20s infinite;}
+
+    @keyframes drive1
+    {0% {left: 0px;}
+      50% {left: 1300px;}
+      100% {left: 0px;} }
+
+
+  .balltwo {
+  position: absolute;
+  background: burlywood;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  opacity: 60%;
+  transition: ease-in-out;
+  animation: drive2 20s infinite;}
+
+  @keyframes drive2 
+  {0% {left: 500px;}
+    50% {left: 1300px;}
+    100% {left: 500px;} }
+  
+
+  .ballthree {
+    position: absolute;
+    background: burlywood;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 80%;
+    transition: ease-in-out;
+    animation: drive3 20s infinite;
+  }
+  @keyframes drive3 
+  {0% {left: 1000px;}
+    50% {left: 1300px;}
+    100% {left: 1000px;}
+  }
+
+
+h3 {
+    align-self: center;
+    font-size: 20px;
+    
+}
+
+
+
+.lists {
+    display: flex;
+    margin-top: 120px;
+}
+.listed1 {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.listed2 {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.listed3
+{
+    display: flex;
+   flex-flow: column wrap;
+   flex-basis: 0;
+   flex-grow: 1;
+
+}
+.listelement {
+    list-style-type: square;
+}
+
+
+
+.message {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.lovemessage:hover {
+    color: rgb(255, 131, 131);
+}
+textarea {
+    width: 350px;
+    height: 100px;
+    background-color: rgb(255, 236, 239);
+    border: dotted;
+    border-color: rgb(214, 214, 252);
+}
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: dotted;
+    border-color: rgb(214, 214, 252) ;
+    background-color: rgb(255, 236, 239);
+    font-size: 13px;
+}
+span {
+    display: flex;
+    justify-content: center;
+}
+.genderchoice {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gender {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    margin-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+footer:hover{
+    font-size: 20px;
+    font-family: fantasy;
+    color: lightsalmon;
+}
+a{
+    color: lightsalmon;
+}
+a:hover {
+    color: rgb(235, 184, 90);
+    font-size: 20px;
+}
