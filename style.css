@@ -199,33 +199,6 @@ rolling ballas
 
 
 /*
-.circle {
-    position: absolute;
-    background: burlywood;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    margin-top: 40px;
-    opacity: 40%;
-    transition: ease-in-out;
-    animation: drive4 20s infinite;
-  }
-    @keyframes drive4
-    {0% {right: 0px;}
-      50% {right: 700px;}
-      100% {right: 0px;}}
-      
-  .circle1 {
-  position: absolute;
-  background:burlywood;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  margin-top: 40px;
-  opacity: 60%;
-  transition: ease-in-out;
-  animation: drive5 20s infinite;
-}
   @keyframes drive5
   { 0% {right: 500px;}
     50% {right: 700px;}
@@ -248,6 +221,7 @@ rolling ballas
     100% {right: 700px;}}
 */
     .ball {
+        margin-top: 100px;
         position: absolute;
         background: burlywood;
         border-radius: 50%;
@@ -256,14 +230,15 @@ rolling ballas
         opacity: 40%;
         transition: ease-in-out;
         animation: drive1 20s infinite;}
-    
         @keyframes drive1
         {0% {left: 1%;}
           50% {left: 50%;}
           100% {left: 1%;} }
     
     
+     
       .balltwo {
+          margin-top: 100px;
       position: absolute;
       background: burlywood;
       border-radius: 50%;
@@ -277,9 +252,40 @@ rolling ballas
       {0% {left: 33%;}
         50% {left: 95%;}
         100% {left: 33%;} }
-      
+        .circle {
+            position: absolute;
+            background: burlywood;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            margin-top: 40px;
+            opacity: 40%;
+            transition: ease-in-out;
+            animation: drive4 20s infinite;
+          }
+            @keyframes drive4
+            {0% {right: 1%;}
+              50% {right: 50%;}
+              100% {right: 1%;}}
+              
+          .circle1 {
+          position: absolute;
+          background:burlywood;
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          margin-top: 40px;
+          opacity: 60%;
+          transition: ease-in-out;
+          animation: drive5 20s infinite;
+        }
+        @keyframes drive5
+        {0% {right: 33%;}
+          50% {right: 95%;}
+          100% {right: 33%;}}
+          
   
- @media screen and (max-width: 370px) {
+ @media screen and (max-width: 770px) {
      .img1 {display: none;}
     .stalker {
         font-size: 24px; 
@@ -291,6 +297,7 @@ rolling ballas
     li { font-size: 20px;}
 
     .message, span, form, .genderchoice, .gender, footer {
+        font-size: 20px;
         color: black;
         text-align: center;}    
 
