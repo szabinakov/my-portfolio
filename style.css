@@ -246,7 +246,7 @@ rolling ballas
   {0% {right: 700px;}
     50% {right: 700px;}
     100% {right: 700px;}}
-
+*/
     .ball {
         position: absolute;
         background: burlywood;
@@ -258,9 +258,9 @@ rolling ballas
         animation: drive1 20s infinite;}
     
         @keyframes drive1
-        {0% {left: 0px;}
-          50% {left: 700px;}
-          100% {left: 0px;} }
+        {0% {left: 1%;}
+          50% {left: 50%;}
+          100% {left: 1%;} }
     
     
       .balltwo {
@@ -274,29 +274,28 @@ rolling ballas
       animation: drive2 20s infinite;}
     
       @keyframes drive2 
-      {0% {left: 500px;}
-        50% {left: 700px;}
-        100% {left: 500px;} }
+      {0% {left: 33%;}
+        50% {left: 95%;}
+        100% {left: 33%;} }
       
-    
-      .ballthree {
-        position: absolute;
-        background: burlywood;
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
-        opacity: 80%;
-        transition: ease-in-out;
-        animation: drive3 20s infinite;
-      }
-      @keyframes drive3 
-      {0% {left: 700px;}
-        50% {left: 700px;}
-        100% {left: 700px;}
-      }
-    
+  
+ @media screen and (max-width: 370px) {
+     .img1 {display: none;}
+    .stalker {
+        font-size: 24px; 
+        text-align: center;}
+    .lists{ 
+        flex-direction: column;
+        color: black;}
+    h3{ font-size: 36px;}    
+    li { font-size: 20px;}
 
-*/
+    .message, span, form, .genderchoice, .gender, footer {
+        color: black;
+        text-align: center;}    
+
+ }
+
 
 
 
