@@ -88,10 +88,6 @@ h3 {
    flex-grow: 1;
 
 }
-.listelement {
-    list-style-type: square;
-}
-
 
 
 
@@ -119,14 +115,15 @@ textarea {
     border-color: rgb(214, 214, 252);
 }
 button {
-    width: 60px;
-    height: 60px;
+    width: auto;
+    height: auto;
     border-radius: 50%;
     border: dotted;
     border-color: rgb(214, 214, 252) ;
     background-color: rgb(255, 236, 239);
-    font-size: 13px;
-}
+    font-size: 10px;
+    padding: 10px;}
+
 span {
     display: flex;
     justify-content: center;
