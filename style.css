@@ -231,9 +231,9 @@ rolling ballas
         transition: ease-in-out;
         animation: drive1 20s infinite;}
         @keyframes drive1
-        {0% {left: 1%;}
+        {0% {left: 10%;}
           50% {left: 50%;}
-          100% {left: 1%;} }
+          100% {left: 10%;} }
     
     
      
@@ -264,9 +264,9 @@ rolling ballas
             animation: drive4 20s infinite;
           }
             @keyframes drive4
-            {0% {right: 1%;}
+            {0% {right: 10%;}
               50% {right: 50%;}
-              100% {right: 1%;}}
+              100% {right: 10%;}}
               
           .circle1 {
           position: absolute;
@@ -292,6 +292,8 @@ rolling ballas
         text-align: center;}
     .lists{ 
         flex-direction: column;
+        max-width: 100%;
+        height: auto;
         color: black;}
     h3{ font-size: 36px;}    
     li { font-size: 20px;}
