@@ -219,7 +219,7 @@ rolling ballas
   {0% {right: 700px;}
     50% {right: 700px;}
     100% {right: 700px;}}
-*//*
+*/
     .ball {
         margin-top: 100px;
         position: absolute;
@@ -283,20 +283,27 @@ rolling ballas
         {0% {right: 33%;}
           50% {right: 95%;}
           100% {right: 33%;}}
-          */
-  
+          
+
+
+
  @media screen and (max-width: 770px) {
-     .img1 {display: none;}
+  
+    .img1 {display: none;}
+  
+  
     .stalker {
         font-size: 24px; 
         text-align: center;}
-    .lists{ 
-        flex-direction: column;
-        max-width: 100%;
-        height: auto;
-        color: black;}
-    h3{ font-size: 36px;}    
+  
+    .lists {
+        display: block;}
+    
+        h3{ font-size: 36px;}    
+
+
     li { font-size: 20px;}
+
 
     .message, span, form, .genderchoice, .gender, footer {
         font-size: 20px;
