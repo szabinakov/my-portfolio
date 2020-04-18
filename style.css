@@ -236,7 +236,7 @@ rolling ballas
           100% {left: 10%;} }
     
     
-     
+     /*
       .balltwo {
           margin-top: 100px;
       position: absolute;
@@ -283,7 +283,7 @@ rolling ballas
         {0% {right: 33%;}
           50% {right: 95%;}
           100% {right: 33%;}}
-          
+          */
   
  @media screen and (max-width: 770px) {
      .img1 {display: none;}
