@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My-Scrapbook</title>
+    </head>
+    <body>
+        <header>
+        <h1>HTML - Scrapbook</h1>
+        </header>
+<main>
+        <div>
+        <h2>Helpful guide for not getting lost!</h2>
+        <section>
+        <h3>Headings</h3>
+        <p><h1>&lt;h1&gt; I am an h1 &lt;/h1&gt;</h1></p>
+        <p><h2>&lt;h2&gt; I am an h2 &lt;/h2&gt;</h2></p>
+        <p><h3>&lt;h3&gt; I am an h3 &lt;/h2&gt;</h3></p>
+        <p><h4>&lt;h4&gt; I am an h4 &lt;/h4&gt;</4></p>
+        <p><h5>&lt;h5&gt; I am an h5 &lt;/h5&gt;</h5></p>
+        <p><h6>&lt;h6&gt; I am an h6 &lt;/h6&gt;</h6></p>
+        </section>
+    <section>
+        <h3>Displaying text</h3>
+        <p>&lt;p&gt; - The HTML &lt;p&gt; element represent paragraph.</p>
+        <p>&lt;span&gt; - The HTML &lt;span&gt; element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang</p>
+        <p>&lt;q&gt; - The HTML &lt;q&gt; element indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks.</p>
+        <p>&lt;code&gt; - The HTML &lt;code&gt; element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code.</p>
+        <p>&lt;br&gt; - The HTML &lt;br&gt; element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.</p>
+    </section>
+    <section>
+        <h3>Compartmentalisation</h3>
+        <p>&lt;div&gt; - The HTML Content Division element (&lt;div&gt;) is the generic container for flow content. It has no effect on the content or layout until styled using CSS.</p>
+    </section>
+    <section>
+        <h3>Lists</h3>
+        <ul>
+            <li>Unordered Lists:</li>
+            <p>&lt;ul&gt;&lt;/ul&gt; - Represents an unordered list of items, typically rendered as a bulleted list. </p>
+            <p>&lt;li&gt;&lt;/li&gt; - Used to represent an itam in a list.</p>
+            <li>Ordered Lists:</li>
+            <p>&lt;ol&gt;&lt;/ol&gt; - Represents an ordered list of items — typically rendered as a numbered list.</p>
+            <p>&lt;li&gt;&lt;/li&gt; - Used to represent an itam in a list.</p>
+        </ul>
+    </section>
+    <section>
+        <h3>Images</h3>
+        <img src="goatinglasses.png" alt="Goat in Glasses" />
+        <p>&lt;img src="goatinglasses.png" alt="Goat in Glasses" /&gt;</p>
+        <p><b>Note 'src'</b> - (mandatory) the location of the image relative to location of the HTML file,  unless a full (<b><i>absolute</i></b>) URL (a.k.a http://) is given.</p>
+        <p><b>Note 'alt'</b> - (optional) what appears in the tooltip when you hover over the image. Good for accessibility. Best Practice</p>
+        <p><b>Note:</b> Images are self closing</p>
+    </section>
+    <section>
+        <h3>Links (or anchors)</h3>
+        <a href="index.html">Home</a>
+        <p>&lt;a href="index.html">Home&lt;/a&gt;</p>
+        <p><b>Note</b> href - (mandatory) the location of what were are linking to <b><i>relative</i></b> to location of the HTML file, unless a full (<b><i>absolute</i></b>) URL (a.k.a http://) is given.</p>
+    </section>
+    <section>
+        <h3>Tables</h3>
+        <p><li>A table is defined using the &lt;table&gt; element, and contains a number of table cells ( &lt;td&gt;, for “table data” ) which are organized into table rows ( &lt;tr&gt;). The markup (HTML code) for a table is always based on rows, never columns.</li></p>
+        <p><li>Table cells which act as column headers or row headers should use the &lt;th&gt; (table header) element.</li></p>
+        <p><li>Table cells can be merged using the colspan and rowspan attributes.</li></p>
+        <p><li>Tables can be broken into sections using the following elements:</li></p>
+        <p>- &lt;thead&gt; - Table header</p>
+        <p>- &lt;tbody&gt; - Table body</p>
+        <p>- &lt;tfoot&gt; - Table footer</p>
+        <p><li>A caption can be added to a table using the &lt;caption&gt; element.</li></p>
+        <p><li>You can use &lt;col&gt; and &lt;colgroup&gt; to define table columns for styling. However, there are a number of limitations with this practice.</li></p>
+        <h4>Example</h4>
+        <table>
+            <tr>
+             <th>Name</th>
+             <th>Age</th>
+             <th>Gender</th>
+            </tr>
+            <tr>
+             <td>Bob</td>
+             <td>16</td>
+             <td>M</td>
+            </tr>
+            <tr>
+             <td>Eva</td>
+             <td>35</td>
+             <td>F</td>
+            </tr>
+            <tr>
+            <td>Lisa</td>
+            <td>26</td>
+            <td>F</td>
+            </tr>
+           </table>
+    </section>
+    <section>
+        <h3>Forms</h3>
+        <form>
+          <label for="name"> >Name:</label>
+            <input type="text" class="name" name="name" placeholder="Type in your full name">
+            <label for="password"> Password:</label>
+            <input type="text" class="password" name="password" placeholder="Must contain numbers">
+        </form>
+    </section>
+    <section>
+        <h3>Buttons</h3>
+            <button>Submit</button>
+    </section>
+</main>
+    </body> 
+</html>
