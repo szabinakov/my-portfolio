@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in touch!</title>
+    <link rel="stylesheet" type="text/css" href="getintouchstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="ulnavbar">
+            <li><a href="#" class="navbar">Home</a></li>
+            <li><a href="#" class="navbar">About Me</a></li>
+            <li><a href="#" class="navbar">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+    <h1> Have something to say? </h1>
+     
+
+        <form id="myForm">
+            <ul>
+                <li class="form-input">
+                    <label for="name">Name: </label>
+                    <input class="name" type="text" id="name" name='user_name' placeholder="First and Last Name">
+                </li>
+                <li class="form-input">
+                    <label for="mail">E-mail:</label>
+                    <input class="mail" type="email" id="mail" name="user_email" placeholder="Your Email Address">
+                </li>
+                <li class="form-input">
+                    <label for="msg">Message:</label>
+                    <textarea class="msg" id="msg" name="user_message" placeholder="Say Something Here!"></textarea>
+                </li>   
+                <div>     
+                <li>
+                    <button id="submit" type="submit">Send Message!</button>
+                </li>
+                <li>
+                    <button id="reset" type="reset">Clear All!</button>
+                </li>   
+                </div>
+            </ul>
+        </form>
+    </section>
+
+
+    <script>
+
+        /*------------ Pressing the Send message! button-------------*/
+
+        var buttonpress = document.getElementById('submit');
+        buttonpress.addEventListener ("click", SendValue);
+        function SendValue () {
+            var nameValue = document.getElementById("name").value;
+            var mailValue = document.getElementById("mail").value;
+            var msgValue = document.getElementById("msg").value;
+            alert(nameValue + " " + mailValue + " " + msgValue)};
+
+    </script>
+</body>
+</html>

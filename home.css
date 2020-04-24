@@ -1,0 +1,161 @@
+body {
+    background-color: #cccccc;
+    background-image: linear-gradient(230deg, #FFEDE4, #FAFFDE, #D5D0D6, #FFEDE4);
+    /*height: 100vh;*/
+    color: #3a333b;
+    font-family: Playfair Display;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 30px;
+    color: #474049;
+    font-weight: lighter;
+
+}
+h2 {
+    text-align: center;
+}
+p {
+    
+}
+
+
+/*-----------Navigation---------*/
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 1em;
+    justify-content: space-evenly;
+    background-image: linear-gradient(90deg, rgba(128, 0, 128, 0.486), rgba(255, 255, 0, 0.445), rgba(255, 192, 203, 0.5), rgba(0, 217, 255, 0.39), rgba(2, 228, 2, 0.425));
+ 
+}
+.navbar {
+    font-size: 20px;
+    color: rgb(250, 127, 26);
+
+}
+.navbar:hover {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
+.ball {
+    position: absolute;
+    background: burlywood;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 40%;
+    transition: ease-in-out;
+    animation: drive1 20s infinite;}
+    @keyframes drive1
+        {0% {left: 10%;}
+        50% {left: 50%;}
+        100% {left: 10%;} }
+     
+.balltwo {
+    position: absolute;
+    background: burlywood;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 60%;
+    transition: ease-in-out;
+    animation: drive2 20s infinite;}
+    @keyframes drive2 
+        {0% {left: 33%;}
+        50% {left: 95%;}
+        100% {left: 33%;} }
+
+
+
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 320px) ;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr;
+    height: 500px;
+    margin-bottom: 100px;
+}
+img {
+    height: 250px;
+    justify-self: center;
+    border: double;
+}
+h2 {
+    font-size: 30px;
+    height: 30px;
+}
+p {
+    height: 150px;
+    text-align: justify;
+}
+footer {
+    margin-top: 50px;
+    justify-self: center;
+}
+
+
+/*---------Cards----------*/
+/*
+.cards {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 20px;
+    justify-content: center;
+    height: 600px;
+    border: double;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+    width: 100%;
+    max-width: 350px;
+}*/
+
+
+
+
+
+
+@media screen and (max-width: 950px ) {
+    .balltwo, .ball {display: none;}
+}
+  
+@media screen and (min-width: 950px) {
+    .cards {
+        margin-top: 100px;
+        grid-gap: 100px;
+        transition: .5s;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    h1 {
+        margin-top: 100px;
+    }
+    .cards {
+        margin-top: 150px;
+        grid-gap: 200px;
+        transition: .5s;
+        grid-template-columns: repeat(auto-fit, 400px);
+    }
+}

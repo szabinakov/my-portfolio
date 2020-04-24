@@ -1,10 +1,38 @@
     body {
     background-color: #cccccc;
     background-image: linear-gradient(230deg, #FFEDE4, #FAFFDE, #D5D0D6, #FFEDE4);
-    height: 100%;
+    /*height: 100vh;*/
     color: #3a333b;
     font-family: Playfair Display;
 }
+
+
+
+.ulnavbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 1em;
+    justify-content: space-evenly;
+    background-image: linear-gradient(90deg, rgba(128, 0, 128, 0.486), rgba(255, 255, 0, 0.445), rgba(255, 192, 203, 0.5), rgba(0, 217, 255, 0.39), rgba(2, 228, 2, 0.425));
+    
+
+}
+.navbar{
+    font-size: 24px;
+    color: rgb(250, 127, 26);
+
+}
+.navbar:hover {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
+
+
+
+
 
 /* 
 *
@@ -150,9 +178,11 @@ label {
 Social media
 *
 */
-nav {
+.socialmedia {
     display: flex;
     justify-content: space-around;
+    color: lightsalmon;
+    font-size: 20px;
 }
 
 
@@ -171,18 +201,7 @@ footer {
     margin-top: 100px;
     margin-bottom: 10px;
 }
-footer:hover{
-    font-size: 20px;
-    font-family: fantasy;
-    color: lightsalmon;
-}
-a{
-    color: lightsalmon;
-}
-a:hover {
-    color: rgb(235, 184, 90);
-    font-size: 20px;
-}
+
 
 
 
@@ -195,91 +214,63 @@ rolling ballas
 */
 
 
-/*
-  @keyframes drive5
-  { 0% {right: 500px;}
-    50% {right: 700px;}
-    100% {right: 500px;} }
-
-  .circle2 {
+.ball {
+    margin-top: 100px;
+    position: absolute;
+    background: burlywood;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 40%;
+    transition: ease-in-out;
+    animation: drive1 20s infinite;}
+    @keyframes drive1
+        {0% {left: 10%;}
+        50% {left: 50%;}
+        100% {left: 10%;} }
+     
+.balltwo {
+    margin-top: 100px;
+    position: absolute;
+    background: burlywood;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 60%;
+    transition: ease-in-out;
+    animation: drive2 20s infinite;}
+    @keyframes drive2 
+        {0% {left: 33%;}
+        50% {left: 95%;}
+        100% {left: 33%;} }
+.circle {
     position: absolute;
     background: burlywood;
     border-radius: 50%;
     height: 30px;
     width: 30px;
     margin-top: 40px;
-    opacity: 80%;
+    opacity: 40%;
     transition: ease-in-out;
-    animation: drive6 20s infinite;
-  }
-  @keyframes drive6
-  {0% {right: 700px;}
-    50% {right: 700px;}
-    100% {right: 700px;}}
-*/
-    .ball {
-        margin-top: 100px;
-        position: absolute;
-        background: burlywood;
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
-        opacity: 40%;
-        transition: ease-in-out;
-        animation: drive1 20s infinite;}
-        @keyframes drive1
-        {0% {left: 10%;}
-          50% {left: 50%;}
-          100% {left: 10%;} }
-    
-    
-     
-      .balltwo {
-          margin-top: 100px;
-      position: absolute;
-      background: burlywood;
-      border-radius: 50%;
-      height: 30px;
-      width: 30px;
-      opacity: 60%;
-      transition: ease-in-out;
-      animation: drive2 20s infinite;}
-    
-      @keyframes drive2 
-      {0% {left: 33%;}
-        50% {left: 95%;}
-        100% {left: 33%;} }
-        .circle {
-            position: absolute;
-            background: burlywood;
-            border-radius: 50%;
-            height: 30px;
-            width: 30px;
-            margin-top: 40px;
-            opacity: 40%;
-            transition: ease-in-out;
-            animation: drive4 20s infinite;
-          }
-            @keyframes drive4
-            {0% {right: 10%;}
-              50% {right: 50%;}
-              100% {right: 10%;}}
-              
-          .circle1 {
-          position: absolute;
-          background:burlywood;
-          border-radius: 50%;
-          height: 30px;
-          width: 30px;
-          margin-top: 40px;
-          opacity: 60%;
-          transition: ease-in-out;
-          animation: drive5 20s infinite;
-        }
-        @keyframes drive5
+    animation: drive4 20s infinite;}
+    @keyframes drive4
+        {0% {right: 10%;}
+        50% {right: 50%;}
+        100% {right: 10%;}  }      
+.circle1 {
+    position: absolute;
+    background:burlywood;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 40px;
+    opacity: 60%;
+    transition: ease-in-out;
+    animation: drive5 20s infinite; }
+    @keyframes drive5
         {0% {right: 33%;}
-          50% {right: 95%;}
-          100% {right: 33%;}}
+        50% {right: 95%;}
+        100% {right: 33%;} }
           
 
 
